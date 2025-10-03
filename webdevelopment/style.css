@@ -1,0 +1,23 @@
+/* Global page style */
+body {
+    background-color: #FFFFFF;          
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    color: #2C3E50;                     
+}
+
+/* Heading 1 */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color:#2C3E50;                  
+    font-size: 42px;
+    margin-bottom: 15px;                  
+}
+
+/* Paragraph */
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #2563EB;
+    font-size: 18px;
+    line-height: 1.6;
+}
