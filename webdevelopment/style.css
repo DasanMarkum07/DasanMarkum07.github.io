@@ -82,3 +82,19 @@ p {
     background-color: #1C6FA8;
     transform: scale(1.05);
 }
+
+
+/* Interest List Styles */
+.interest-list {
+    list-style-type: square;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #2C3E50;
+    margin: 15px 0 25px 30px;
+    padding: 10px 0;
+}
+
+.interest-list li:hover {
+    color: #2563EB;
+    transition: color 0.3s ease;
+}
