@@ -8,6 +8,12 @@ header {
     
 }
 
+?* Logo size in header */
+header img {
+    width: 100px;
+    height: auto;
+}
+
 /*Navigation menu layout using Flexbox */
 .nav-menu {
     display: flex;
