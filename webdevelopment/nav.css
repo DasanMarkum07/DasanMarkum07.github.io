@@ -1,0 +1,33 @@
+/* Header Flexbox layout: aligns logo and navigation menu horizontally */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2C3E50;
+    padding: 10px 20px;
+    
+}
+
+/*Navigation menu layout using Flexbox */
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 25px; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation link style */
+.nav-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Hover state for navigation links  */
+.nav-menu a:hover {
+    color: #FFD700;
+}
