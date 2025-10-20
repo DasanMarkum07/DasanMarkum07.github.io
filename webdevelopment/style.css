@@ -113,7 +113,7 @@ p {
     font-size: 2em;
     font-weight: bold;
     color: #2c3e50;
-    float: left;
+    float: none;
     margin-right: 5px;
 }
 
