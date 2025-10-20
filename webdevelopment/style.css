@@ -110,11 +110,11 @@ p {
 
 /* Style the first letter of the first paragraph differently */
 .reflection-box p.intro::first-letter {
-    font-size: 2em;
     font-weight: bold;
-    color: #2c3e50;
+    color: #1c4e8b;
+    font-size: 1.2em;
     float: none;
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
 /*Indent the first line of every other paragraph inside the reflection box*/
