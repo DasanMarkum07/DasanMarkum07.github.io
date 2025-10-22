@@ -50,11 +50,52 @@ header img {
     text-decoration: underline;
 }
 
-/* Center the nav items on smaller screens */
+/* Dropdown menu container */
+.dropdown {
+    position: relative; /* Needed for absolute positioning of dropdown content */
+}
+
+/* Dropdown hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #34495E;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual dropdown items */
+.dropdown-content li {
+    list-style-type: none;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #2c3e50;
+    color: #FFD700;
+}
+
+/* Show dropdown when hovering over parent */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 800px) {
     header {
         flex-direction: column;
-        align-items: center;
+        align-items: center;    
     }
 
     .nav-menu {
@@ -62,7 +103,18 @@ header img {
         gap: 15px;
         margin-top: 10px;
     }
-}   
+
+    /* Make dropdowns open directly under the parent item on mobile */
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: #2c3e50;
+    }
+}
+
+
+
+ 
 
 
 
