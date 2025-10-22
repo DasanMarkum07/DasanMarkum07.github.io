@@ -110,7 +110,13 @@ header img {
         box-shadow: none;
         background-color: #2c3e50;
     }
+
+    /* Make dropdown links fill the width on mobile */
+    .dropdown-content a {
+        width: 100%;
+    }
 }
+
 
 
 
