@@ -124,3 +124,29 @@ p {
     line-height: 1.6;
 }
 
+/* About Page Media Styling */
+.professional-photo {
+    display: block;
+    width: 250px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro-video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 5px;
+    color: #555;
+}
+
