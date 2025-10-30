@@ -189,6 +189,10 @@ footer .contact-info .icon {
         display: none !important;
     }
 
+    .no-print {
+        display: none !important;
+    }
+
     /* Adjust font sizes to fit on one page */
     h1 {
         font-size: 24pt !important;
