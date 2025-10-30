@@ -185,7 +185,7 @@ footer .contact-info .icon {
     }
 
     /* Hide everything else */
-    header, nav, h3, figure, img, video, a, .hero, .hero-btn, .interest-list, .pdf-link, .professional-photo, .intro-video, .reflection-box {
+    header, nav, h3, figure, img, video, a, .hero, .hero-btn, .pdf-link, .professional-photo, .intro-video, .reflection-box {
         display: none !important;
     }
 
