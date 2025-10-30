@@ -168,3 +168,48 @@ footer .contact-info .icon {
     width: 24px;
     height: 24px;
 }
+
+/* Print Styles for about.html */
+@media print {
+    /* General body styling for print */
+    body {
+        background: none !important;
+        color: black !important;
+        font-family: "Times New Roman", Times, serif !important;
+        margin: 1in !important;
+    }
+
+    /* Show only required elements */
+    h1, p, ul, ol, footer {
+        display: block !important;
+    }
+
+    /* Hide everything else */
+    header, nav, h3, figure, img, video, a, .hero, .hero-btn, .interest-list, .pdf-link, .professional-photo, .intro-video, .reflection-box {
+        display: none !important;
+    }
+
+    /* Adjust font sizes to fit on one page */
+    h1 {
+        font-size: 24pt !important;
+        margin-bottom:0.5em !important;
+    }
+
+    p {
+        font-size: 12pt !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.5em !important;
+    }
+
+    ul, ol {
+        font-size: 12pt !important;
+        margin-bottom: 0.5em !important;
+        padding-left: 1.2em !important;
+    }
+
+    footer {
+        font-size: 10pt !important;
+        margin-top: 1em !important;
+        color: black !important;
+    }
+}
