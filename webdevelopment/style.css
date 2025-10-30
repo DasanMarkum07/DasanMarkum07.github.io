@@ -150,3 +150,21 @@ figcaption {
     color: #555;
 }
 
+/* Footer contact info styling */
+footer .contact-info {
+    margin-top: 10px;
+}
+
+footer .contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+
+footer .contact-info .icon {
+    width: 24px;
+    height: 24px;
+}
