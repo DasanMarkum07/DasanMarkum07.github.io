@@ -217,3 +217,67 @@ footer .contact-info .icon {
         color: black !important;
     }
 }
+
+
+/*Contact Form Styles*/
+    .contact-form {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 2px solid #2C3E50;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #2C3E50;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus,
+    .contact-form select:focus {
+        border-color: #2563EB;
+        outline: none;
+    }
+
+    .submit-btn {
+        display: inline-block;
+        background-color: #3498DB;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; transform 0.2s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #1C6FA8;
+        transform: scale(1.05);
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 600px) {
+        .contact-form {
+            width: 90%;
+            padding: 15px;
+        }
+    }
