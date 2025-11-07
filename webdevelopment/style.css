@@ -299,33 +299,18 @@ footer .contact-info .icon {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
         "photo bio"
-        "resume bio"
-        ". video"
+        "resume video"
         ". interests";
     gap: 20px;
     padding: 20px;
     align-items: start;
 }
 
-.photo {
-    grid-area: photo;
-}
-
-.resume {
-    grid-area: resume;
-}
-
-.bio {
-    grid-area: bio;
-}
-.video {
-    grid-area: video;
-}
-
-.interests {
-    grid-area: interests;
-}
-
+.photo {grid-area: photo;}
+.resume {grid-area: resume;}
+.bio {grid-area: bio;}
+.video {grid-area: video;}
+.interests {grid-area: interests;}
 
 /* Mobile Layout */
 @media (max-width: 768px) {
@@ -337,8 +322,8 @@ footer .contact-info .icon {
             "bio"
             "video"
             "interests";
+              
     }
-
     .photo, .resume, .bio, .video, .interests {
         justify-self: center;
     }
