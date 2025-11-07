@@ -54,11 +54,13 @@
         </nav> 
     </header>
 
-    <!-- Main content area -->
-    <main>
-        <h1>About Me</h1> 
-        <h3>Short Bio</h3>
-        <p>Hello, my name is Dasan Markum, I am 18 years old, and I am from a small town in Missouri called Wright City. 
+    <!-- Main content area: uses CSS Grid to organize biography, interests, photos, videos, and resume -->
+    <main class="about-grid">
+        <!-- Biography Section -->
+        <section class="bio">
+            <h1>About Me</h1> 
+            <h3>Short Bio</h3>
+            <p>Hello, my name is Dasan Markum, I am 18 years old, and I am from a small town in Missouri called Wright City. 
             I attended the Wright City R-2 School District for my entire K-12 career. For my Junior and Senior years
             of High School, I attended vocational school at Four Rivers Career Center, located in Washington, Missouri, 
             where I completed the first year Information Technology program and earned a Testout PC Pro Certification 
@@ -66,40 +68,55 @@
             at the University of Missouri (Columbia), and I am pursuing a Bachelor’s degree in Information Technology.  
             My hobbies include finding unreleased music and importing it into my Apple Music library to create a massive 
             collection of unreleased music, staying up to date on the latest tech trends and learning about new breakthroughs.</p>
-        
+        </section>
+
         <!-- Interests Section -->
-        <h3>My Interests</h3>
-        <p>Here are some of my main interests and hobbies:</p>
-        <ul class="interest-list">
-            <li>Exploring and collecting unreleased music</li>
-            <li>Learning about cybersecurity and IT systems</li>
-            <li>Following the latest tech trends</li>
-            <li>Learning about current social trends</li>
-        </ul>
+        <section class="interests">
+            <h3>My Interests</h3>
+            <p>Here are some of my main interests and hobbies:</p>
+            <ul class="interest-list">
+                <li>Exploring and collecting unreleased music</li>
+                <li>Learning about cybersecurity and IT systems</li>
+                <li>Following the latest tech trends</li>
+                <li>Learning about current social trends</li>
+            </ul>
+        </section>
+
+        <!-- Professional Photo -->
+        <section class="photo">
+            <h3>Professional Photo</h3>
+            <img src="myphoto.jpg" alt="Professional Photo of Dasan Markum" class="professional-photo">
+        </section>
+    
+        <!-- Introduction Video-->
+        <section class="video">
+            <h3>Introduction Video</h3>
+            <figure>
+                <video controls width="400" class="intro-video">
+                    <source src="myvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Watch my introduction video to learn more about me!</figcaption>
+            </figure>
+        </section>
 
         <!-- Resume Section -->
-         <h3>Resume</h3>
-         <p class="no-print">You can download my resume below:</p>
-         <a href="Resume.pdf" class= "pdf-link" target="_blank">📄 Download My Resume</a>
-
-         <!-- Professional Photo -->
-         <h3>Professional Photo</h3>
-         <img src="myphoto.jpg" alt="Professional Photo of Dasan Markum" class="professional-photo">
+        <section class="resume">
+            <h3>Resume</h3>
+            <p class="no-print">You can download my resume below:</p>
+            <a href="Resume.pdf" class="pdf-link" target="_blank">📄 Download My Resume</a>
+        </section>
          
-         <!-- Introduction Video-->
-          <h3>Introduction Video</h3>
-          <figure>
-            <video controls width="400" class="intro-video">
-                <source src="myvideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <figcaption>Watch my introduction video to learn more about me!</figcaption>
-          </figure>
     </main>
 
     <!-- Footer section: -->
     <footer> 
-        <p>Created by Dasan Markum - September 21, 2025</p>
+        <p>Created by Dasan Markum - November 1, 2025</p>
+        <div class="contact-info">
+            <p><img src="icons8-phone-48.png" alt="Phone icon" class="icon"> (636) 235-2024</p>
+            <p><img src="icons8-mail-94.png" alt="Email icon" class="icon"> 
+                <a href="mailto:dasanmarkum@gmail.com">dasanmarkum@gmail.com</a></p>
+        </div>
     </footer>
 </body>
 </html>

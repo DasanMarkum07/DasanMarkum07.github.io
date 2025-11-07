@@ -232,7 +232,7 @@ footer .contact-info .icon {
 
     .contact-form label {
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 8px;
         font-weight: bold;
         color: #2C3E50;
     }
@@ -266,7 +266,7 @@ footer .contact-info .icon {
         padding: 12px 25px;
         margin-top: 20px;
         cursor: pointer;
-        transition: background-color 0.3s ease; transform 0.2s ease;
+        transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .submit-btn:hover {
@@ -293,3 +293,51 @@ footer .contact-info .icon {
             padding: 15px;
         }
     }
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+        "photo bio"
+        "video bio"
+        "resume resume";
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.photo {
+    grid-area: photo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    grid-area: video;
+}
+
+.resume {
+    grid-area: resume;
+    justify-self: start;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "photo"
+            "bio"
+            "video"
+            "resume";
+    }
+
+    .photo, .bio, .video, .resume {
+        justify-self: center;
+    }
+}
