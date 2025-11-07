@@ -300,7 +300,7 @@ footer .contact-info .icon {
     grid-template-areas: 
         "photo bio"
         "video bio"
-        "resume resume";
+        "interests resume";
     gap: 20px;
     padding: 20px;
     align-items: start;
@@ -310,20 +310,25 @@ footer .contact-info .icon {
     grid-area: bio;
 }
 
+.video {
+    grid-area: video;
+}
+
+.interests {
+    grid-area: interests;
+}
+
 .photo {
     grid-area: photo;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.video {
-    grid-area: video;
+    flex-direction: column;
 }
 
 .resume {
     grid-area: resume;
-    justify-self: start;
+    justify-self: center;
 }
 
 /* Mobile Layout */
@@ -334,10 +339,11 @@ footer .contact-info .icon {
             "photo"
             "bio"
             "video"
-            "resume";
+            "resume"
+            "interests";
     }
 
-    .photo, .bio, .video, .resume {
+    .photo, .resume, .bio, .video, .interests {
         justify-self: center;
     }
 }
