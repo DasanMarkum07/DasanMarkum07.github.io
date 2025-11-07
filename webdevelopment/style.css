@@ -299,17 +299,25 @@ footer .contact-info .icon {
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
         "photo bio"
-        "video bio"
-        "interests resume";
+        "resume bio"
+        ". video"
+        ". interests";
     gap: 20px;
     padding: 20px;
     align-items: start;
 }
 
+.photo {
+    grid-area: photo;
+}
+
+.resume {
+    grid-area: resume;
+}
+
 .bio {
     grid-area: bio;
 }
-
 .video {
     grid-area: video;
 }
@@ -318,18 +326,6 @@ footer .contact-info .icon {
     grid-area: interests;
 }
 
-.photo {
-    grid-area: photo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.resume {
-    grid-area: resume;
-    justify-self: center;
-}
 
 /* Mobile Layout */
 @media (max-width: 768px) {
@@ -337,9 +333,9 @@ footer .contact-info .icon {
         grid-template-columns: 1fr;
         grid-template-areas: 
             "photo"
+            "resume"
             "bio"
             "video"
-            "resume"
             "interests";
     }
 
