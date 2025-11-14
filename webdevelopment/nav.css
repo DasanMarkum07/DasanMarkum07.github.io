@@ -91,6 +91,14 @@ header img {
     display: block;
 }
 
+/* hide hamburger icon on desktop */
+.hamburger {
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 800px) {
     header {
@@ -117,6 +125,24 @@ header img {
     }
 }
 
+/* hide full nav, show hamburger */
+@media (max-width: 600px) {
+
+    /* Hide full navigation menu */
+    .nav-menu {
+        display: none;
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide dropdowns on mobile */
+    .dropdown-content {
+        display: none !important;
+    }
+}
 
 
 
