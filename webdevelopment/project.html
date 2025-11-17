@@ -1,0 +1,152 @@
+<!-- 
+    Name: Dasan Markum 
+    Date: November 16, 2025 
+    Page: project.html 
+    Description: Responsive project page showcasing certifications, diploma, and job experience
+--> 
+
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Projects | Dasan Markum</title>  
+
+    <!-- Link to external CSS stylesheet for styling the webpage -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to navigation stylesheet for Flexbox layout and styling -->
+    <link rel="stylesheet" href="nav.css">
+
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+</head> 
+
+<body> 
+    <!-- Header section: will hold site logo and navigation in future -->
+    <header> 
+        <!-- Site Logo -->
+        <img src="logo.png" alt="Dasan Markum Site Logo">
+
+        <!-- Hidden checkbox (controls the menu toggle)-->
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Hamburger icon for mobile -->
+         <label for ="menu-toggle" class="hamburger">&#9776;</label>
+
+        <!-- Navigation Bar -->
+        <nav> 
+            <ul class = "nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+
+                <li class="dropdown">
+                    <a href="projects.html" class="active">Projects ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#pcpro">PC Pro Cert</a></li>
+                        <li><a href="#networkpro">Network Pro Cert</a></li>
+                        <li><a href="#diploma">High School Diploma</a></li>
+                        <li><a href="#popeyes">Job Experience</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <h1 class= "page-title">My Professional Projects & Achievements</h1>
+        
+        <!-- Grid Layout -->
+         <section class="grid-container">
+
+            <!-- PC Pro Certification -->
+            <article class="card" id="pcpro">
+                <h2>Certification 1: TestOut PC Pro</h2>
+                <img src="pc_pro_cert.png" alt="PC Pro Certification Badge">
+
+                <p>
+                    This was the first certification I earned in my first semester of 
+                    junior year of high school in the first year information technology 
+                    program at Four Rivers Career Center. This certification shows I 
+                    mastered the basic fundamental concepts of the physical hardware 
+                    side of information technology. I learned about all the components 
+                    that make up a computer and how each of them works, such as CPUs, 
+                    memory, storage, power supplies, motherboards, and any other physical 
+                    component required for a computer to function. I received the 
+                    certification through the company Testout before it was purchased by CompTIA
+                </p>
+
+                <p><a href="https://certification.testout.com/verifycert/6-2C6-V9SF3C" target="_blank">Verify PC Pro Certification</a></p>
+            </article>
+
+            <!-- Network Pro Certification-->
+            <article class="card" id="networkpro">
+                <h2>Certification 2: TestOut Network Pro</h2>
+                <img src="network_pro_cert.png" alt="Network Pro Certification Badge">
+
+                <p>
+                    This was the second certification I earned in my second semester of junior year 
+                    of high school in the first year information technology program at Four Rivers 
+                    Career Center. This certification shows I mastered the basic fundamental concepts 
+                    of networking and server management, understanding network architecture, and how 
+                    networks operate together. I received the certification from the same company 
+                    as my first one, before it was purchased by CompTIA
+                </p>
+
+                <p><a href="https://certification.testout.com/verifycert/6-2C6-VELKQL" target="_blank">Verify Network Pro Certification</a></p>
+            </article>
+
+            <!-- High School Diploma -->
+            <article class="card" id="diploma">
+                <h2>High School Diploma</h2>
+                <img src="diploma.png" alt= "Wright City High School Diploma">
+
+                <p>
+                    I graduated from Wright City High School, and received my diploma for my K-12 
+                    education, where I learned and mastered everything required by the Missouri Board 
+                    of Education. This foundation for all the concepts and fundamentals I need to 
+                    succeed in College
+                </p>
+            </article>
+
+            <!-- Job Experience -->
+            <article class="card" id="popeyes">
+                <h2>Job Experience: Popeyes Louisiana Kitchen Cashier</h2>
+                <img src="popeyes.png" alt="Popeyes Logo">
+
+                <p>
+                    I worked at a Popeyes Louisiana Kitchen located inside of a Travel Centers 
+                    of America truck stop located in Foristell, Missouri for over a year as a cashier. 
+                    I gained valuable customer service skills and learned to work effectively in a 
+                    fast-paced environment to ensure things ran smoothly. My general manager favored 
+                    me for my work ethic and was sad to see me leave as a result of going to college.
+
+                </p>
+            </article> 
+        
+        </section>
+    </main>
+
+    <footer> 
+        <p>Created by Dasan Markum - November 16, 2025</p>
+
+        <div class="contact-info">
+            <p>
+                <img src="icons8-phone-48.png" alt="Phone icon" class="icon">
+                (636) 235-2024
+            </p>
+            <p>
+                <img src="icons8-mail-94.png" alt="Email icon" class="icon">    
+                dasanmarkum@gmail.com
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

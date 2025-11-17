@@ -328,3 +328,44 @@ footer .contact-info .icon {
         justify-self: center;
     }
 }
+
+/* Project Page Grid Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Mobile Layout for Project Page */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        font-size: 16px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+}
