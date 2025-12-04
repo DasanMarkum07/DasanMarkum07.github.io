@@ -451,3 +451,20 @@ First & third rows same color using nth-child */
         font-size: 18px;
     }
 }
+
+/* Footer Icon Hover Animations*/
+
+/* Smooth transition for footer icons */
+footer .contact-info .icon {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                filter 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover animation effect */
+footer .contact-info .icon:hover {
+    transform: scale(1.25);
+    box-shadow: 0 0 12px rgba(52, 152, 219, 0.8);
+    filter: brightness(1.2);
+}
